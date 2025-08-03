@@ -1,59 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AR Menu — Test Table</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      body {
-        font-family: sans-serif;
-        padding: 2rem;
-        background: #f9f9f9;
-        text-align: center;
-      }
-      model-viewer {
-        width: 100%;
-        max-width: 600px;
-        height: 500px;
-        margin: 2rem auto;
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      }
-    </style>
-  </head>
-  <body>
-    <h1>AR Меню: Посмотри блюда на столе</h1>
-    
-    <model-viewer
-      src="model1.glb"
-      ios-src="model1.usdz"
-      alt="Сэндвич"
-      ar
-      ar-modes="scene-viewer webxr quick-look"
-      auto-rotate
-      camera-controls>
-    </model-viewer>
+<h1>AR Меню: Посмотри блюда на столе</h1>
 
-    <model-viewer
-      src="model2.glb"
-      ios-src="model2.usdz"
-      alt="Сырный пирог с кунжутом"
-      ar
-      ar-modes="scene-viewer webxr quick-look"
-      auto-rotate
-      camera-controls>
-    </model-viewer>
+<a rel="ar" href="model1.usdz">
+  <model-viewer src="model1.glb" alt="Сэндвич" ar ar-modes="scene-viewer webxr quick-look" auto-rotate camera-controls></model-viewer>
+</a>
 
-    <model-viewer
-      src="model3.glb"
-      ios-src="model3.usdz"
-      alt="Фруктовый торт"
-      ar
-      ar-modes="scene-viewer webxr quick-look"
-      auto-rotate
-      camera-controls>
-    </model-viewer>
+<a rel="ar" href="model2.usdz">
+  <model-viewer src="model2.glb" alt="Сырный пирог с кунжутом" ar ar-modes="scene-viewer webxr quick-look" auto-rotate camera-controls></model-viewer>
+</a>
 
-    <p>Сканируй QR-код или открой сайт на телефоне для AR-режима 🍽️</p>
-  </body>
-</html>
+<a rel="ar" href="model3.usdz">
+  <model-viewer src="model3.glb" alt="Фруктовый торт" ar ar-modes="scene-viewer webxr quick-look" auto-rotate camera-controls></model-viewer>
+</a>
+
+<p>Сканируй QR-код или открой сайт на телефоне для AR-режима 📱</p>
